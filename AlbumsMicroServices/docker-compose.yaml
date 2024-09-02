@@ -1,11 +1,13 @@
 version: "1"
 services:
   discovery:
+    image: olexiybondar9685/kub-demo-discovery
     build: ./PhotoAppDiscoveryService/PhotoAppDiscoveryService
     ports:
       - '8010:8010'
 
   users:
+    image: olexiybondar9685/kub-demo-api-users
     build: ./PhotoAppApiUsers/PhotoAppApiUsers
     depends_on:
       - discovery
