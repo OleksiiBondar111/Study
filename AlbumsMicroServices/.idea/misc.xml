@@ -3,6 +3,8 @@
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/ApiGateway/ApiGateway" />
+    <file type="web" url="file://$PROJECT_DIR$/PhotoAppApiAlbums/PhotoAppApiAlbums" />
+    <file type="web" url="file://$PROJECT_DIR$/PhotoAppApiConfigServer/PhotoAppApiConfigServer" />
     <file type="web" url="file://$PROJECT_DIR$/PhotoAppApiUsers/PhotoAppApiUsers" />
     <file type="web" url="file://$PROJECT_DIR$/PhotoAppDiscoveryService/PhotoAppDiscoveryService" />
   </component>

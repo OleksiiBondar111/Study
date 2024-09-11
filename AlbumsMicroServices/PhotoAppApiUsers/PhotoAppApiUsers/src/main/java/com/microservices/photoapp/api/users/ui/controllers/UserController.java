@@ -5,6 +5,7 @@ import com.microservices.photoapp.api.users.service.UsersService;
 import com.microservices.photoapp.api.users.shared.UserDto;
 import com.microservices.photoapp.api.users.ui.model.CreateUserRequestModel;
 import com.microservices.photoapp.api.users.ui.model.CreateUserResponseModel;
+import com.microservices.photoapp.api.users.ui.model.UserResponseModel;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -23,16 +24,16 @@ public class UserController {
 
     private final Environment environment;
     private final UsersService usersService;
+    private final ModelMapper modelMapper;
 
     @GetMapping("/status/check")
     public String status() {
         log.info("Checking user status");
-        return "Working on port: " + environment.getProperty("local.server.port");
+        return "Working on port: " + environment.getProperty("local.server.port") + " " + environment.getProperty("test.me");
     }
 
     @PostMapping
     public ResponseEntity<CreateUserResponseModel> createUser(@Valid @RequestBody CreateUserRequestModel userDetails) {
-        ModelMapper modelMapper = new ModelMapper();
         modelMapper.getConfiguration().setMatchingStrategy(MatchingStrategies.STRICT);
 
         UserDto userDto = modelMapper.map(userDetails, UserDto.class);
@@ -41,6 +42,14 @@ public class UserController {
         CreateUserResponseModel returnValue = modelMapper.map(createdUser, CreateUserResponseModel.class);
 
         return ResponseEntity.status(HttpStatus.CREATED).body(returnValue);
+    }
+
+    @GetMapping(value = "/{userId}")
+    public ResponseEntity<UserResponseModel> getUser(@PathVariable("userId") String userId) {
+        UserDto userDto = usersService.getUserByUserId(userId);
+        UserResponseModel returnValue = modelMapper.map(userDto, UserResponseModel.class);
+        ResponseEntity<UserResponseModel> body = ResponseEntity.status(HttpStatus.OK).body(returnValue);
+        return body;
     }
 
 }

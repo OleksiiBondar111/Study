@@ -3,6 +3,7 @@ package com.microservices.photoapp.api.users.security;
 
 import com.microservices.photoapp.api.users.service.UsersService;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.env.Environment;
@@ -13,14 +14,15 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.web.DefaultSecurityFilterChain;
 import org.springframework.security.web.SecurityFilterChain;
-import org.springframework.security.web.access.expression.WebExpressionAuthorizationManager;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
 @EnableMethodSecurity(prePostEnabled = true)
 @Configuration
 @EnableWebSecurity
 @RequiredArgsConstructor
+@Slf4j
 public class WebSecurity {
 
     private final Environment environment;
@@ -49,7 +51,8 @@ public class WebSecurity {
         http.authorizeHttpRequests((authz) -> authz
 //                        .requestMatchers(new AntPathRequestMatcher("/users/**")).access(
 //                                new WebExpressionAuthorizationManager("hasIpAddress('"+environment.getProperty("gateway.ip")+"')"))
-                        .requestMatchers(new AntPathRequestMatcher("/users/**")).permitAll()
+                                .requestMatchers(new AntPathRequestMatcher("/users/**")).permitAll()
+                                .requestMatchers(new AntPathRequestMatcher("/actuator/**")).permitAll()
                 )
                 .addFilter(new AuthorizationFilter(authenticationManager, environment))
                 .addFilter(authenticationFilter)
@@ -58,7 +61,8 @@ public class WebSecurity {
                         .sessionCreationPolicy(SessionCreationPolicy.STATELESS));
 
         http.headers((headers) -> headers.frameOptions((frameOptions) -> frameOptions.sameOrigin()));
-        return http.build();
+        DefaultSecurityFilterChain build = http.build();
+        return build;
     }
 
 }

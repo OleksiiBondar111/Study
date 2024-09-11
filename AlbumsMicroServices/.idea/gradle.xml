@@ -13,6 +13,24 @@
         </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/PhotoAppApiAlbums/PhotoAppApiAlbums" />
+        <option name="gradleJvm" value="temurin-21" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/PhotoAppApiAlbums/PhotoAppApiAlbums" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/PhotoAppApiConfigServer/PhotoAppApiConfigServer" />
+        <option name="gradleJvm" value="temurin-21" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/PhotoAppApiConfigServer/PhotoAppApiConfigServer" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/PhotoAppApiUsers/PhotoAppApiUsers" />
         <option name="gradleJvm" value="temurin-21" />
         <option name="modules">
