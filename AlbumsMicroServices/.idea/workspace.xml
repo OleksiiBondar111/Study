@@ -4,35 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2eb4b6d6-98c1-40c3-85d1-f39fdb3cccca" name="Changes" comment="Added Resiliense4j">
-      <change afterPath="$PROJECT_DIR$/.idea/modules/PhotoAppApiAlbums.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ApiGateway/ApiGateway/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PhotoAppApiAlbums/PhotoAppApiAlbums/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PhotoAppApiConfigServer/PhotoAppApiConfigServer/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApiGateway/ApiGateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ApiGateway/ApiGateway/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApiGateway/ApiGateway/src/test/java/com/microservices/photoapp/api/gateway/ApiGatewayApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/ApiGateway/ApiGateway/src/test/java/com/microservices/photoapp/api/gateway/ApiGatewayApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoAppApiAlbums/PhotoAppApiAlbums/src/main/resources/bootstrap.properties" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoAppApiAlbums/PhotoAppApiAlbums/src/main/resources/bootstrap.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoAppApiAlbums/PhotoAppApiAlbums/src/test/java/Albums/microservice/PhotoAppApiAlbumsApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoAppApiAlbums/PhotoAppApiAlbums/src/test/java/Albums/microservice/PhotoAppApiAlbumsApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoAppApiConfigServer/PhotoAppApiConfigServer/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoAppApiConfigServer/PhotoAppApiConfigServer/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoAppApiConfigServer/PhotoAppApiConfigServer/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoAppApiConfigServer/PhotoAppApiConfigServer/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoAppApiConfigServer/PhotoAppApiConfigServer/src/main/resources/bootstrap.properties" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoAppApiConfigServer/PhotoAppApiConfigServer/src/main/resources/bootstrap.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoAppApiUsers/PhotoAppApiUsers/src/main/java/com/microservices/photoapp/api/users/data/AlbumsServiceClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoAppApiUsers/PhotoAppApiUsers/src/main/java/com/microservices/photoapp/api/users/data/AlbumsServiceClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoAppApiUsers/PhotoAppApiUsers/src/main/resources/bootstrap.properties" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoAppApiUsers/PhotoAppApiUsers/src/main/resources/bootstrap.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoAppApiUsers/PhotoAppApiUsers/src/test/java/com/microservices/photoapp/api/users/PhotoAppApiUsersApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoAppApiUsers/PhotoAppApiUsers/src/test/java/com/microservices/photoapp/api/users/PhotoAppApiUsersApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoAppDiscoveryService/PhotoAppDiscoveryService/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoAppDiscoveryService/PhotoAppDiscoveryService/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configuration/dev/albums-ws-local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoAppApiConfigServer/PhotoAppApiConfigServer/configuration/dev/albums-ws-local.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configuration/dev/albums-ws.properties" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoAppApiConfigServer/PhotoAppApiConfigServer/configuration/dev/albums-ws.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configuration/dev/api-gateway-local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoAppApiConfigServer/PhotoAppApiConfigServer/configuration/dev/api-gateway-local.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configuration/dev/api-gateway.properties" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoAppApiConfigServer/PhotoAppApiConfigServer/configuration/dev/api-gateway.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configuration/dev/apiEncryptionKey.jks" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoAppApiConfigServer/PhotoAppApiConfigServer/configuration/dev/apiEncryptionKey.jks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configuration/dev/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoAppApiConfigServer/PhotoAppApiConfigServer/configuration/dev/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configuration/dev/users-ws-local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoAppApiConfigServer/PhotoAppApiConfigServer/configuration/dev/users-ws-local.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configuration/dev/users-ws.properties" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoAppApiConfigServer/PhotoAppApiConfigServer/configuration/dev/users-ws.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users-ws.log" beforeDir="false" afterPath="$PROJECT_DIR$/users-ws.log" afterDir="false" />
+    <list default="true" id="2eb4b6d6-98c1-40c3-85d1-f39fdb3cccca" name="Changes" comment="Added docker-compose configuration">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,41 +95,41 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.ApiGateway [build].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Build ApiGateway.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Build PhotoAppApiAlbums.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Build PhotoAppApiConfigServer.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Build PhotoAppApiUsers.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Build PhotoAppDiscoveryService.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.PhotoAppApiAlbums [build].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.PhotoAppApiConfigServer [build].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.PhotoAppApiUsers [build].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.PhotoAppDiscoveryService [build].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Tests in 'PhotoAppApiConfigServer'.executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.ApiGatewayApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.PhotoAppApiAlbumsApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.PhotoAppApiConfigServerApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.PhotoAppApiUsersApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.PhotoAppDiscoveryServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/JavaProjects/hermes-common&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.ApiGateway [build].executor": "Run",
+    "Gradle.Build ApiGateway.executor": "Run",
+    "Gradle.Build PhotoAppApiAlbums.executor": "Run",
+    "Gradle.Build PhotoAppApiConfigServer.executor": "Run",
+    "Gradle.Build PhotoAppApiUsers.executor": "Run",
+    "Gradle.Build PhotoAppDiscoveryService.executor": "Run",
+    "Gradle.PhotoAppApiAlbums [build].executor": "Run",
+    "Gradle.PhotoAppApiConfigServer [build].executor": "Run",
+    "Gradle.PhotoAppApiUsers [build].executor": "Run",
+    "Gradle.PhotoAppDiscoveryService [build].executor": "Run",
+    "Gradle.Tests in 'PhotoAppApiConfigServer'.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.ApiGatewayApplication.executor": "Run",
+    "Spring Boot.PhotoAppApiAlbumsApplication.executor": "Run",
+    "Spring Boot.PhotoAppApiConfigServerApplication.executor": "Run",
+    "Spring Boot.PhotoAppApiUsersApplication.executor": "Run",
+    "Spring Boot.PhotoAppDiscoveryServiceApplication.executor": "Run",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/StudyProjects/GIT/Study/AlbumsMicroServices",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "run.configurations.included.in.services": "true",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -365,7 +338,7 @@
       <workItem from="1726135734918" duration="7735000" />
       <workItem from="1726147033411" duration="1161000" />
       <workItem from="1726148211153" duration="11199000" />
-      <workItem from="1726159934623" duration="3304000" />
+      <workItem from="1726159934623" duration="3618000" />
     </task>
     <task id="LOCAL-00001" summary="Added Resiliense4j">
       <option name="closed" value="true" />
@@ -375,14 +348,34 @@
       <option name="project" value="LOCAL" />
       <updated>1726075859742</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added docker-compose configuration">
+      <option name="closed" value="true" />
+      <created>1726163510541</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1726163510541</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added Resiliense4j" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Resiliense4j" />
+    <MESSAGE value="Added docker-compose configuration" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added docker-compose configuration" />
   </component>
 </project>
