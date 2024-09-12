@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/AlbumsMicroServices.iml" filepath="$PROJECT_DIR$/.idea/AlbumsMicroServices.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/PhotoAppApiAlbums.main.iml" filepath="$PROJECT_DIR$/.idea/modules/PhotoAppApiAlbums.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/PhotoAppApiUsers.main.iml" filepath="$PROJECT_DIR$/.idea/modules/PhotoAppApiUsers.main.iml" />
     </modules>
   </component>
