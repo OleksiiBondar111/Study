@@ -52,6 +52,12 @@ public class WebSecurity {
 //                        .requestMatchers(new AntPathRequestMatcher("/users/**")).access(
 //                                new WebExpressionAuthorizationManager("hasIpAddress('"+environment.getProperty("gateway.ip")+"')"))
                                 .requestMatchers(new AntPathRequestMatcher("/users/**")).permitAll()
+                                .requestMatchers(new AntPathRequestMatcher("/swagger-ui/**")).permitAll()
+                                .requestMatchers(new AntPathRequestMatcher("/api/v1/auth/**")).permitAll()
+                                .requestMatchers(new AntPathRequestMatcher("/v3/api/docs.yaml")).permitAll()
+                                .requestMatchers(new AntPathRequestMatcher("/v3/api-docs/**")).permitAll()
+                                .requestMatchers(new AntPathRequestMatcher("/swagger-ui/**")).permitAll()
+                                .requestMatchers(new AntPathRequestMatcher("/swagger-ui.html")).permitAll()
                                 .requestMatchers(new AntPathRequestMatcher("/actuator/**")).permitAll()
                 )
                 .addFilter(new AuthorizationFilter(authenticationManager, environment))

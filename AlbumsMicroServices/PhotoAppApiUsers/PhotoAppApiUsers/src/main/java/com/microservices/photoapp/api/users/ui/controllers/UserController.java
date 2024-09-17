@@ -6,6 +6,7 @@ import com.microservices.photoapp.api.users.shared.UserDto;
 import com.microservices.photoapp.api.users.ui.model.CreateUserRequestModel;
 import com.microservices.photoapp.api.users.ui.model.CreateUserResponseModel;
 import com.microservices.photoapp.api.users.ui.model.UserResponseModel;
+import io.swagger.v3.oas.annotations.Parameter;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -27,6 +28,7 @@ public class UserController {
     private final ModelMapper modelMapper;
 
     @GetMapping("/status/check")
+    @Parameter(name = "Authorization", required = true, example = "Bearer access_token")
     public String status() {
         log.info("Checking user status");
         return "Working on port: " + environment.getProperty("local.server.port") + " " + environment.getProperty("test.me");
@@ -45,6 +47,7 @@ public class UserController {
     }
 
     @GetMapping(value = "/{userId}")
+    @Parameter(name = "Authorization", required = true, example = "Bearer access_token")
     public ResponseEntity<UserResponseModel> getUser(@PathVariable("userId") String userId) {
         UserDto userDto = usersService.getUserByUserId(userId);
         UserResponseModel returnValue = modelMapper.map(userDto, UserResponseModel.class);

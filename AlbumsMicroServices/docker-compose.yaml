@@ -1,5 +1,36 @@
 version: "1"
+
+volumes:
+  db-data:
+  logs-data:
+
+
 services:
+
+  elasticsearch:
+    container_name: elasticsearch
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.3.0
+    volumes:
+      - logs-data:/usr/share/elasticsearch/data
+    ports:
+      - 9200:9200
+      - 9300:9300
+    environment:
+      - discovery.type=single-node
+
+  kibana:
+    container_name: kibana
+    image: docker.elastic.co/kibana/kibana:7.3.0
+    ports:
+      - 5601:5601
+
+  logstash:
+    container_name: logstash
+    image: olexiybondar9685/logstash
+    build: ./ELK/logstash
+    volumes:
+      - logs-data:/logs
+
   discovery:
     container_name: discovery
     image: olexiybondar9685/photoapp-discovery
@@ -13,6 +44,9 @@ services:
   users-service:
     container_name: users-service
     image: olexiybondar9685/photoapp-albums
+    volumes:
+      - db-data:/app/database
+      - logs-data:/app/logs
     build: ./PhotoAppApiUsers/PhotoAppApiUsers
     depends_on:
       config-server:
@@ -22,6 +56,8 @@ services:
     container_name: albums-service
     image: olexiybondar9685/photoapp-users
     build: ./PhotoAppApiAlbums/PhotoAppApiAlbums
+    volumes:
+      - logs-data:/app/logs
     depends_on:
       config-server:
         condition: service_healthy
@@ -42,6 +78,6 @@ services:
     build: ./PhotoAppApiConfigServer/PhotoAppApiConfigServer
     healthcheck:
       test: "curl --fail --silent http://config-server:8012/actuator/health/readiness | grep UP || exit 1"
-      interval: 5s
+      interval: 10s
       timeout: 5s
       retries: 2

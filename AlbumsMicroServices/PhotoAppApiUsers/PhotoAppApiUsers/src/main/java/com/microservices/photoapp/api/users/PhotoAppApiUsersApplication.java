@@ -1,6 +1,8 @@
 package com.microservices.photoapp.api.users;
 
 import feign.Logger;
+import io.swagger.v3.oas.annotations.OpenAPIDefinition;
+import io.swagger.v3.oas.annotations.info.Info;
 import org.modelmapper.ModelMapper;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.actuate.web.exchanges.HttpExchangeRepository;
@@ -16,6 +18,7 @@ import org.springframework.web.client.RestTemplate;
 @SpringBootApplication
 @EnableDiscoveryClient
 @EnableFeignClients
+@OpenAPIDefinition(info = @Info(title = "PhotoApp API users", version = "1.0", description = "Users microservice"))
 public class PhotoAppApiUsersApplication {
 
     public static void main(String[] args) {
