@@ -1,0 +1,66 @@
+spring:
+  application:
+    name: ${APPLICATION_NAME}
+  datasource:
+    url: ${DATABASE_URL}
+    username: ${DATABASE_USER}
+    password: ${DATABASE_PASSWORD}
+    hikari:
+      maximumPoolSize: 50
+  jpa:
+    properties:
+      hibernate:
+        generate-statistics: true
+        show-sql: true
+        format-sql: true
+        enable_lazy_load_no_trans: true
+        event:
+          merge:
+            entity_copy_observer: allow
+        jdbc:
+          time_zone: UTC
+          lob:
+            non_contextual_creation: true
+  jackson:
+    deserialization:
+      ADJUST_DATES_TO_CONTEXT_TIME_ZONE: false
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+    validate-on-migrate: true
+    out-of-order: true
+  mvc:
+    async:
+      requestTimeout: 150000
+  main:
+    allowCircularReferences: true
+
+server:
+  port: ${APPLICATION_PORT}
+
+logging:
+  level:
+    root: INFO
+    org:
+      hibernate:
+        SQL: ERROR # DEBUG
+        # type:
+        #     descriptor:
+        #         sql:
+        #             BasicBinder: TRACE
+      springframework:
+        data:
+          elasticsearch:
+            core: ERROR
+            # client:
+            #   WIRE: trace
+    # com:
+    #   netflix:
+    #     discovery: DEBUG
+
+
+

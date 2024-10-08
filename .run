@@ -1,0 +1,6 @@
+//Expose Postgres container and create a user and 2 databases
+docker run --rm -d --name postgresql -e POSTGRES_PASSWORD=1 -v D:/Work/Development/SHMS/:/var/lib/postgresql/data -p 5432:5432 postgres
+docker exec -i -t postgresql psql -U postgres
+
+create user shms_dev with password '1';
+create database shms_db with owner shms_dev;
