@@ -15,7 +15,12 @@ import org.modelmapper.convention.MatchingStrategies;
 import org.springframework.core.env.Environment;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/users")
@@ -34,6 +39,11 @@ public class UserController {
         return "Working on port: " + environment.getProperty("local.server.port") + " " + environment.getProperty("test.me");
     }
 
+    @GetMapping(value = "/username")
+    public String currentUserName(Authentication authentication) {
+        return authentication.getName();
+    }
+
     @PostMapping
     public ResponseEntity<CreateUserResponseModel> createUser(@Valid @RequestBody CreateUserRequestModel userDetails) {
         modelMapper.getConfiguration().setMatchingStrategy(MatchingStrategies.STRICT);
@@ -47,11 +57,22 @@ public class UserController {
     }
 
     @GetMapping(value = "/{userId}")
-    @Parameter(name = "Authorization", required = true, example = "Bearer access_token")
-    public ResponseEntity<UserResponseModel> getUser(@PathVariable("userId") String userId) {
-        UserDto userDto = usersService.getUserByUserId(userId);
+    @PreAuthorize("hasRole('ADMIN') or principal == #userId")
+    public ResponseEntity<UserResponseModel> getUser(@PathVariable("userId") String userId,
+                                                     @RequestHeader("Authorization") String authorization) {
+        UserDto userDto = usersService.getUserByUserId(userId, authorization);
         UserResponseModel returnValue = modelMapper.map(userDto, UserResponseModel.class);
         ResponseEntity<UserResponseModel> body = ResponseEntity.status(HttpStatus.OK).body(returnValue);
+        return body;
+    }
+
+    @GetMapping
+    public ResponseEntity<List<UserResponseModel>> getAllUsers() {
+        List<UserDto> allUsers = usersService.getAllUsers();
+        List<UserResponseModel> modelList = allUsers.stream()
+                .map(user -> modelMapper.map(user, UserResponseModel.class))
+                .collect(Collectors.toList());
+        ResponseEntity<List<UserResponseModel>> body = ResponseEntity.status(HttpStatus.OK).body(modelList);
         return body;
     }
 

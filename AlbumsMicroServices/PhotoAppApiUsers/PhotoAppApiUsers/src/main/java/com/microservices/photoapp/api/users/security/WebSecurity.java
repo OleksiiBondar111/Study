@@ -18,7 +18,7 @@ import org.springframework.security.web.DefaultSecurityFilterChain;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
-@EnableMethodSecurity(prePostEnabled = true)
+@EnableMethodSecurity()
 @Configuration
 @EnableWebSecurity
 @RequiredArgsConstructor

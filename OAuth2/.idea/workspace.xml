@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d5b79e5c-e2ae-4545-8e12-103210c0b44d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../AlbumsMicroServices/JwtClaimsParser/JwtClaimsParser/src/main/java/com/microservices/photoapp/JwtClaimsParser/JwtClaimsParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlbumsMicroServices/PhotoAppApiAlbums/PhotoAppApiAlbums/src/main/java/Albums/microservice/security/WebSecurity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlbumsMicroServices/PhotoAppApiUsers/PhotoAppApiUsers/src/main/java/com/microservices/photoapp/api/users/InitialUsersSetup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlbumsMicroServices/PhotoAppApiUsers/PhotoAppApiUsers/src/main/java/com/microservices/photoapp/api/users/data/AuthorityEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlbumsMicroServices/PhotoAppApiUsers/PhotoAppApiUsers/src/main/java/com/microservices/photoapp/api/users/data/AuthorityRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlbumsMicroServices/PhotoAppApiUsers/PhotoAppApiUsers/src/main/java/com/microservices/photoapp/api/users/data/RoleEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlbumsMicroServices/PhotoAppApiUsers/PhotoAppApiUsers/src/main/java/com/microservices/photoapp/api/users/data/RoleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlbumsMicroServices/PhotoAppApiUsers/PhotoAppApiUsers/src/main/java/com/microservices/photoapp/api/users/shared/Roles.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlbumsMicroServices/PhotoAppApiUsers/PhotoAppApiUsers/src/main/java/com/microservices/photoapp/api/users/shared/RolesDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/OAuth2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/AlbumsResourceServer.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/PhotoAppWebClient.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlbumsResourceServer/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlbumsResourceServer/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlbumsResourceServer/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlbumsResourceServer/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlbumsResourceServer/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlbumsResourceServer/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlbumsResourceServer/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlbumsResourceServer/src/main/java/com/microservices/api/AlbumsResourceServer/AlbumsResourceServerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlbumsResourceServer/src/main/java/com/microservices/api/AlbumsResourceServer/controller/AlbumsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlbumsResourceServer/src/main/java/com/microservices/api/AlbumsResourceServer/model/AlbumResponseModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlbumsResourceServer/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlbumsResourceServer/src/test/java/com/microservices/api/AlbumsResourceServer/AlbumsResourceServerApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlbumsService/src/main/java/com/microservices/ws/api/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlbumsService/src/main/java/com/microservices/ws/api/controller/AlbumsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlbumsService/src/main/java/com/microservices/ws/api/jwt/CustomJwt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlbumsService/src/main/java/com/microservices/ws/api/jwt/CustomJwtConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlbumsService/src/main/java/com/microservices/ws/api/model/AlbumResponseModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AngularUI/photo-app-ui/src/app/app.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DiscoveryService/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DiscoveryService/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DiscoveryService/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DiscoveryService/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DiscoveryService/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DiscoveryService/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DiscoveryService/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DiscoveryService/src/main/java/com/microservices/api/DiscoveryService/DiscoveryServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DiscoveryService/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DiscoveryService/src/main/resources/bootstrap.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DiscoveryService/src/test/java/com/microservices/api/DiscoveryService/DiscoveryServiceApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PhotoAppWebClient/src/main/java/com/microservices/api/clients/controller/AlbumsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PhotoAppWebClient/src/main/java/com/microservices/api/clients/model/AlbumResponseModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PhotosResourceServer/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PhotosResourceServer/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PhotosResourceServer/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PhotosResourceServer/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PhotosResourceServer/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PhotosResourceServer/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PhotosResourceServer/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PhotosResourceServer/src/main/java/com/microservices/api/PhotosResourceServer/PhotosResourceServerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PhotosResourceServer/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PhotosResourceServer/src/test/java/com/microservices/api/PhotosResourceServer/PhotosResourceServerApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RecourseServer/src/main/java/com/microservices/ws/api/RecourseServer/controllers/UsersController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RecourseServer/src/main/resources/bootstrap.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AlbumsMicroServices/ApiGateway/ApiGateway/src/main/resources/application-local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../AlbumsMicroServices/ApiGateway/ApiGateway/src/main/resources/application-local.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AlbumsMicroServices/ApiGateway/ApiGateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../AlbumsMicroServices/ApiGateway/ApiGateway/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AlbumsMicroServices/PhotoAppApiAlbums/PhotoAppApiAlbums/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../AlbumsMicroServices/PhotoAppApiAlbums/PhotoAppApiAlbums/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AlbumsMicroServices/PhotoAppApiConfigServer/PhotoAppApiConfigServer/configuration/dev/api-gateway-local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../AlbumsMicroServices/PhotoAppApiConfigServer/PhotoAppApiConfigServer/configuration/dev/api-gateway-local.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AlbumsMicroServices/PhotoAppApiConfigServer/PhotoAppApiConfigServer/configuration/dev/api-gateway.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../AlbumsMicroServices/PhotoAppApiConfigServer/PhotoAppApiConfigServer/configuration/dev/api-gateway.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AlbumsMicroServices/PhotoAppApiConfigServer/PhotoAppApiConfigServer/configuration/dev/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../AlbumsMicroServices/PhotoAppApiConfigServer/PhotoAppApiConfigServer/configuration/dev/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AlbumsMicroServices/PhotoAppApiConfigServer/PhotoAppApiConfigServer/configuration/dev/users-ws-local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../AlbumsMicroServices/PhotoAppApiConfigServer/PhotoAppApiConfigServer/configuration/dev/users-ws-local.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AlbumsMicroServices/PhotoAppApiUsers/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AlbumsMicroServices/PhotoAppApiUsers/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AlbumsMicroServices/PhotoAppApiUsers/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AlbumsMicroServices/PhotoAppApiUsers/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AlbumsMicroServices/PhotoAppApiUsers/PhotoAppApiUsers/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../AlbumsMicroServices/PhotoAppApiUsers/PhotoAppApiUsers/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AlbumsMicroServices/PhotoAppApiUsers/PhotoAppApiUsers/src/main/java/com/microservices/photoapp/api/users/PhotoAppApiUsersApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AlbumsMicroServices/PhotoAppApiUsers/PhotoAppApiUsers/src/main/java/com/microservices/photoapp/api/users/PhotoAppApiUsersApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AlbumsMicroServices/PhotoAppApiUsers/PhotoAppApiUsers/src/main/java/com/microservices/photoapp/api/users/data/AlbumsServiceClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AlbumsMicroServices/PhotoAppApiUsers/PhotoAppApiUsers/src/main/java/com/microservices/photoapp/api/users/data/AlbumsServiceClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AlbumsMicroServices/PhotoAppApiUsers/PhotoAppApiUsers/src/main/java/com/microservices/photoapp/api/users/data/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AlbumsMicroServices/PhotoAppApiUsers/PhotoAppApiUsers/src/main/java/com/microservices/photoapp/api/users/data/UserEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AlbumsMicroServices/PhotoAppApiUsers/PhotoAppApiUsers/src/main/java/com/microservices/photoapp/api/users/data/UsersRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AlbumsMicroServices/PhotoAppApiUsers/PhotoAppApiUsers/src/main/java/com/microservices/photoapp/api/users/data/UsersRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AlbumsMicroServices/PhotoAppApiUsers/PhotoAppApiUsers/src/main/java/com/microservices/photoapp/api/users/security/AuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AlbumsMicroServices/PhotoAppApiUsers/PhotoAppApiUsers/src/main/java/com/microservices/photoapp/api/users/security/AuthenticationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AlbumsMicroServices/PhotoAppApiUsers/PhotoAppApiUsers/src/main/java/com/microservices/photoapp/api/users/security/AuthorizationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AlbumsMicroServices/PhotoAppApiUsers/PhotoAppApiUsers/src/main/java/com/microservices/photoapp/api/users/security/AuthorizationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AlbumsMicroServices/PhotoAppApiUsers/PhotoAppApiUsers/src/main/java/com/microservices/photoapp/api/users/security/WebSecurity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AlbumsMicroServices/PhotoAppApiUsers/PhotoAppApiUsers/src/main/java/com/microservices/photoapp/api/users/security/WebSecurity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AlbumsMicroServices/PhotoAppApiUsers/PhotoAppApiUsers/src/main/java/com/microservices/photoapp/api/users/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AlbumsMicroServices/PhotoAppApiUsers/PhotoAppApiUsers/src/main/java/com/microservices/photoapp/api/users/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AlbumsMicroServices/PhotoAppApiUsers/PhotoAppApiUsers/src/main/java/com/microservices/photoapp/api/users/service/UsersService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AlbumsMicroServices/PhotoAppApiUsers/PhotoAppApiUsers/src/main/java/com/microservices/photoapp/api/users/service/UsersService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AlbumsMicroServices/PhotoAppApiUsers/PhotoAppApiUsers/src/main/java/com/microservices/photoapp/api/users/shared/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AlbumsMicroServices/PhotoAppApiUsers/PhotoAppApiUsers/src/main/java/com/microservices/photoapp/api/users/shared/UserDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AlbumsMicroServices/PhotoAppApiUsers/PhotoAppApiUsers/src/main/java/com/microservices/photoapp/api/users/ui/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AlbumsMicroServices/PhotoAppApiUsers/PhotoAppApiUsers/src/main/java/com/microservices/photoapp/api/users/ui/controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AlbumsMicroServices/PhotoAppApiUsers/PhotoAppApiUsers/src/main/java/com/microservices/photoapp/api/users/ui/model/UserResponseModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AlbumsMicroServices/PhotoAppApiUsers/PhotoAppApiUsers/src/main/java/com/microservices/photoapp/api/users/ui/model/UserResponseModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AlbumsMicroServices/configuration/dev/api-gateway-local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../AlbumsMicroServices/configuration/dev/api-gateway-local.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AlbumsMicroServices/configuration/dev/api-gateway.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../AlbumsMicroServices/configuration/dev/api-gateway.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AlbumsMicroServices/configuration/dev/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../AlbumsMicroServices/configuration/dev/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AlbumsMicroServices/configuration/dev/users-ws-local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../AlbumsMicroServices/configuration/dev/users-ws-local.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AlbumsMicroServices/database/users.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/../AlbumsMicroServices/database/users.mv.db" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/AlbumsResourceServer">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/AlbumsService">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/ApiGateway">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/DiscoveryService">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/PhotoAppWebClient">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/PhotosResourceServer">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/RecourseServer">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2mWSWPhT9e2fxFWyILDw0nk5pUw" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.Build AlbumsService.executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.AlbumsServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/StudyProjects/microservices/PhotoAppApiUsers-final/PhotoAppApiUsers&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\StudyProjects\\GIT\\Study\\OAuth2\\AngularUI\\photo-app-ui\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\StudyProjects\GIT\Study\OAuth2\AngularUI\photo-app-ui\src\app" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.microservices.ws.api.model" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.AlbumsServiceApplication">
+    <configuration name="AlbumsResourceServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="AlbumsResourceServer.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.microservices.api.AlbumsResourceServer.AlbumsResourceServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AlbumsServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="AlbumsService.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.microservices.ws.api.AlbumsServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="ApiGateway.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.microservices.ws.api.ApiGateway.ApiGatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DiscoveryServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="DiscoveryService.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.microservices.api.DiscoveryService.DiscoveryServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PhotoAppWebClientApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="PhotoAppWebClient.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.microservices.api.clients.PhotoAppWebClientApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PhotosResourceServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="PhotosResourceServer.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.microservices.api.PhotosResourceServer.PhotosResourceServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RecourseServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="RecourseServer.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.microservices.ws.api.RecourseServer.RecourseServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.15989.150" />
+        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-IU-241.15989.150" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d5b79e5c-e2ae-4545-8e12-103210c0b44d" name="Changes" comment="" />
+      <created>1727190870791</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1727190870791</updated>
+      <workItem from="1727190873007" duration="4366000" />
+      <workItem from="1727454233486" duration="1406000" />
+      <workItem from="1727456052789" duration="181000" />
+      <workItem from="1727456518097" duration="3059000" />
+      <workItem from="1727460315299" duration="125000" />
+      <workItem from="1727461850985" duration="5506000" />
+      <workItem from="1727617938923" duration="23000" />
+      <workItem from="1728397224306" duration="642000" />
+      <workItem from="1728403501097" duration="1936000" />
+      <workItem from="1728643533874" duration="83000" />
+      <workItem from="1728643674955" duration="160000" />
+      <workItem from="1730128222458" duration="196000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/AlbumsService/src/main/java/com/microservices/ws/api/controller/AlbumsController.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/AlbumsService/src/main/java/com/microservices/ws/api/jwt/CustomJwtConverter.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

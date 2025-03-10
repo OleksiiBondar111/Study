@@ -14,4 +14,5 @@ public class UserDto {
     private String password;
     private String encryptedPassword;
     private List<AlbumResponseModel> albums;
+    private List<RolesDto> roles;
 }
